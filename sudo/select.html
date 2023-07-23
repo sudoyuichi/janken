@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <style>
+        .choice-image {
+            width: 100px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>じゃんけんゲーム</h1>
+    <p>じゃんけんの手を選択して、選択ボタンをクリックすると、コンピューターとジャンケンができます！</p>
+    <form action="result.php" method="post">
+        <table>
+            <tr>
+                <td><img src="img/Rock.png" alt="Rock" class="choice-image"></td>
+                <td><img src="img/Scissors.png" alt="Scissors" class="choice-image"></td>
+                <td><img src="img/Paper.png" alt="Paper" class="choice-image"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="userHand" value="R" required></td>
+                <td><input type="radio" name="userHand" value="S" required></td>
+                <td><input type="radio" name="userHand" value="P" required></td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+            <a href="select.html">
+                <button>もう一回じゃんけんする</button>
+            </a>
+        </div>
+    </form>
+</body>
+</html>
